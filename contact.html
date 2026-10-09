@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Contact Us | Jun's Cut Salon and Barbershop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="./favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="./junscut.jpg" alt="Logo" class="logo">
+            </a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="book.html" class="nav-link">Book Now</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Left Panel - Contact Info -->
+                <div class="contact-info-panel">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone Number</h4>
+                                <p>+63 927 558 8671</p>
+                                <p class="small-note">Call us for quick inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Address</h4>
+                                <p>junluter1016@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Our Location</h4>
+                                <p>Unit 110-111, Cartagena Suites Condominium</p>
+                                <p>Bagong Diwa St., Poblacion Makati City, 1210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday: 10:00 AM - 7:00 PM</p>
+                                <p class="small-note">Walk-ins welcome, bookings preferred</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>         
+<!-- Right Panel - Contact Form -->
+<div class="contact-form-panel">
+    <div class="form-header" id="formHeader">
+        <h3>Send Us a Message</h3>
+        <p>Fill out the form below and we'll get back to you as soon as possible</p>
+    </div>
+    
+    <form class="contact-form-enhanced" id="contactForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label>Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label>Email Address <span class="required">*</span></label>
+                <input type="email" id="email" placeholder="Enter your email address">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number (11 digits)">
+            </div>
+            <div class="form-group">
+                <label>Subject <span class="required">*</span></label>
+                <select id="subject">
+                    <option value="">Select a subject</option>
+                    <option value="inquiry">General Inquiry</option>
+                    <option value="booking">Booking Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="complaint">Report an Issue</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Message <span class="required">*</span></label>
+            <textarea id="message" rows="5" placeholder="Please provide details about your inquiry..."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+    </form>
+    
+    <!-- SUCCESS MESSAGE DIV - Make sure this exists -->
+    <div id="contactSuccess" style="display: none;"></div>
+</div>
+        </section>
+
+
+</section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Find Us</span>
+                    <h2>Our Location</h2>
+                    <p>Visit us at our salon in the heart of Poblacion, Makati</p>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4650.929215492272!2d121.02732527510557!3d14.568941985913666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9ac5dfa2f07%3A0x99070c3e5da2a9f0!2sCartagena%20Suites%20Condominium!5e1!3m2!1sen!2sph!4v1786862918921!5m2!1sen!2sph" 
+                        width="100%" 
+                        height="600" 
+                        style="border:0; border-radius: 24px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-note">
+                    <p><i class="fas fa-parking"></i> Parking available nearby | <i class="fas fa-train"></i> Accessible via Jeepney/Trike from Ayala MRT</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section - FIXED -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Help Center</span>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Do I need to book an appointment?</span>
+                            <i class="fas fa-chevron-down faq-arrow"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Walk-ins are welcome, but we highly recommend booking an appointment to avoid long wait times and guarantee your preferred time slot.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-question-circle"></i>
+                            <span>What payment methods do you accept?</span>
+                            <i class="fas fa-chevron-down faq-arrow"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept cash, GCash, Maya, and credit/debit cards (Visa, Mastercard).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Do you offer services for kids?</span>
+                            <i class="fas fa-chevron-down faq-arrow"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer kids haircuts for children 12 years and under for only ₱250.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-question-circle"></i>
+                            <span>What is your cancellation policy?</span>
+                            <i class="fas fa-chevron-down faq-arrow"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Please notify us at least 2 hours before your appointment for cancellations or rescheduling.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Do you offer bridal packages?</span>
+                            <i class="fas fa-chevron-down faq-arrow"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer special bridal packages including hair, makeup, and nail services. Please contact us for more details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <img src="./junscut.jpg" alt="Jun's Cut Logo">
+            </div>
+            <p>Premium haircuts and grooming services in the heart of Makati. Your style, our passion.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61584180612265" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Visit Us</h4>
+            <p><i class="fas fa-location-dot"></i> Unit 110–111, Cartagena Suites,<br> Poblacion, Makati City, Philippines</p>
+            <p><i class="fas fa-phone"></i> +63 927 558 8671</p>
+            <p><i class="fas fa-envelope"></i> junluter1016@gmail.com</p>
+        </div>
+        <div class="footer-col">
+            <h4>Opening Hours</h4>
+            <ul class="hours">
+                <li>Mon - Sun: <span>10:00 AM - 7:00 PM</span></li>
+                <li class="holiday">Closed: Public Holidays</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Jun's Cut Salon and Barbershop. All rights reserved. | Crafted with <i class="fas fa-scissors"></i> in Makati</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
